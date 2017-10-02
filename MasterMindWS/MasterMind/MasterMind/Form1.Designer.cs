@@ -166,6 +166,7 @@
             this.button1.TabIndex = 12;
             this.button1.TabStop = false;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
             // 
             // button2
             // 
@@ -176,6 +177,7 @@
             this.button2.Size = new System.Drawing.Size(75, 75);
             this.button2.TabIndex = 11;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Visible = false;
             // 
             // button3
             // 
@@ -186,6 +188,7 @@
             this.button3.Size = new System.Drawing.Size(75, 75);
             this.button3.TabIndex = 10;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Visible = false;
             // 
             // button4
             // 
@@ -197,6 +200,7 @@
             this.button4.Size = new System.Drawing.Size(75, 75);
             this.button4.TabIndex = 9;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Visible = false;
             // 
             // label1
             // 

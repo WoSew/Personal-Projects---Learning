@@ -7,3 +7,21 @@ D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterM
 D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.exe
 D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.pdb
 D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.csprojResolveAssemblyReference.cache
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.Form1.resources
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.Properties.Resources.resources
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.GenerateResource.Cache
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.exe
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.pdb
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\MasterMind.exe.config
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\MasterMind.exe
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\MasterMind.pdb
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\Black.png
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\Blue.png
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\Gray.png
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\Green.png
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\Orange.png
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\Pink.png
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\Red.png
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\White.png
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\Yellow.png
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\Logo.png
