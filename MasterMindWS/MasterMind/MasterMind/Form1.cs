@@ -23,8 +23,8 @@ namespace MasterMind
             
             MasterMindBoard mmBoard = new MasterMindBoard();
             MasterMindSecretBoard mmSecret = new MasterMindSecretBoard();
-
-
+            MasterMindCheckBoard mmCheck = new MasterMindCheckBoard();
+            
             //ADD buttons
             for (int i=0;i < 10;i++)
             {
@@ -32,7 +32,7 @@ namespace MasterMind
                     {
                         for (int l = 0; l < 2; l++)
                         {
-                            AddCheckingButton(i, k ,l);
+                            AddCheckingButton(mmCheck,i, k ,l);
                         }
                     }
                 AddRound(i);
@@ -67,19 +67,25 @@ namespace MasterMind
             secretButton.Size = new Size(Btn_Orange.Size.Width, Btn_Orange.Size.Height);
             secretButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             secretButton.Text = i.ToString(); // ROBOCZO - poźniej wykomentować
+            secretButton.ForeColor = Color.Black;
 
             Controls.Add(secretButton);
         }
 
 
         //TODO: dodać klasę Check + Inferejs, by pola do zaznaczania popranych odpowiedzi były obiektami klasy.
-        public void AddCheckingButton(int i, int k, int l)
+        public void AddCheckingButton(MasterMindCheckBoard mmCheck, int i, int k, int l)
         {
             Button checkButton = new Button();
 
             checkButton.Location = new Point(k * 30 + Btn_Green.Location.X, l * 30 + Btn_Green.Location.Y - (i * 61)-61);
             checkButton.Size = new Size(27, 27);
+            checkButton.Text = "[" + (k).ToString() + "," + (l).ToString() + "]"; // ROBOCZO - poźniej wykomentować
+            checkButton.Font = new Font("Arial", 6);
+            checkButton.ForeColor = Color.Black;
+
             Controls.Add(checkButton);
+
         }
 
         public void AddControl(MasterMindBoard mmBoard, int i, int j)
@@ -92,6 +98,7 @@ namespace MasterMind
             mmButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             Controls.Add(mmButton);
             mmButton.Text = "["+(i).ToString()+"," + (j).ToString()+"]"; // ROBOCZO - poźniej wykomentować
+            mmButton.ForeColor = Color.Black;
 
             mmButton.DragEnter += MmButton_DragEnter;
             mmButton.DragDrop += MmButton_DragDrop;

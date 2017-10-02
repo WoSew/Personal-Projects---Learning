@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Boards\MasterMindCheckBoard.cs" />
     <Compile Include="Fields\CheckField.cs" />
     <Compile Include="Interfaces\ISecretBoard.cs" />
     <Compile Include="Boards\MasterMindBoard.cs" />
