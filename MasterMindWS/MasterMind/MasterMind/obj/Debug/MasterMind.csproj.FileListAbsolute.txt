@@ -1,0 +1,9 @@
+D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\bin\Debug\MasterMind.exe.config
+D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\bin\Debug\MasterMind.exe
+D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\bin\Debug\MasterMind.pdb
+D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.Form1.resources
+D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.Properties.Resources.resources
+D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.GenerateResource.Cache
+D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.exe
+D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.pdb
+D:\01_Toci\00_Nauka własna\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.csprojResolveAssemblyReference.cache
