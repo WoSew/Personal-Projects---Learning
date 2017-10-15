@@ -25,3 +25,4 @@ D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bi
 D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\White.png
 D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\Yellow.png
 D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\bin\Debug\Resources\Logo.png
+D:\01_Toci\97_Personal Projects - Learning\MasterMindWS\MasterMind\MasterMind\obj\Debug\MasterMind.csprojResolveAssemblyReference.cache

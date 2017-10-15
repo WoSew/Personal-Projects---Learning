@@ -1,4 +1,5 @@
-﻿using MasterMind.Interfaces;
+﻿using System;
+using MasterMind.Interfaces;
 
 namespace MasterMind
 {
@@ -21,8 +22,9 @@ namespace MasterMind
             SecretField mmSecretField = new SecretField();
             mmSecretField.XCoordinate = i * 61;
 
-           // mmSecretField.color
+            //mmSecretField.color
             return mmSecretField;
         }
+
     }
 }

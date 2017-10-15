@@ -6,8 +6,7 @@ namespace MasterMind.Interfaces
     {
         int XCoordinate { get; set; }
         int YCoordinate { get; set; }
-
-        Color color { get; set; }
-
+        Color Color { get; set; }
+        void GetPlayerColor();
     }
 }
