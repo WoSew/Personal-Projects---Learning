@@ -10,6 +10,8 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
+            kyu7.NbDig(25, 0);
+            kyu6.Divisors(16);
             kyu8.Remove_char("eloquent");
             kyu8.Digitize(35231);
             kyu6.Persistence(39);

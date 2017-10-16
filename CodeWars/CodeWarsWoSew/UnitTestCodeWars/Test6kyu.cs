@@ -15,6 +15,14 @@ namespace UnitTestCodeWars
             Assert.AreEqual(4, kyu6.Persistence(999)); // because 9*9*9 = 729, 7*2*9 = 126,
         }
 
+        [TestMethod]
+        public void Divisors()
+        {
+            Assert.AreEqual(new int[] { 3, 5 }, kyu6.Divisors(15));
+            Assert.AreEqual(new int[] { 2, 4, 8 }, kyu6.Divisors(16));
+            Assert.AreEqual(new int[] { 11, 23 }, kyu6.Divisors(253));
+            Assert.AreEqual(new int[] { 2, 3, 4, 6, 8, 12 }, kyu6.Divisors(24));
+        }
 
     }
 }
