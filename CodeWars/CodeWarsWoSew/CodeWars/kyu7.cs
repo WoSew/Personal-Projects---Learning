@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 
 namespace CodeWars
@@ -38,5 +39,36 @@ namespace CodeWars
             }
             return counter;
         }
+
+        public static int Calc(int[] array) // Operations with sequence using for loop 
+        {
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] > 0)
+                {
+                    array[i] *= array[i];
+                }
+                if ((i + 1) % 3 == 0)
+                {
+                    array[i] *= 3;
+                }
+                if ((i + 1) % 5 == 0)
+                {
+                    array[i] *= -1;
+                }
+
+            }
+            return array.Sum();
+        }
+
+        public static int CalcLinq(int[] array)
+        {
+            return array.Select(a => a > 0 ? a * a : a)
+                .Select((a, i) => (i + 1) % 3 == 0 ? 3 * a : a)
+                .Select((a, i) => (i + 1) % 5 == 0 ?    -a : a)
+                .Sum();
+        }
+
     }
 }

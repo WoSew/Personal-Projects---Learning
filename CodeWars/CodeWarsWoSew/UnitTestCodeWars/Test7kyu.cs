@@ -24,5 +24,22 @@ namespace UnitTestCodeWars
             Assert.AreEqual(kyu7.NbDig(11549, 1), 11905);
         }
 
+        [TestMethod]
+        public void Calc()
+        {
+            //implementation with:
+
+            //for loop
+            Assert.AreEqual(31, kyu7.Calc(new[] {0, 2, 1, -6, -3, 3}));
+            Assert.AreEqual(0, kyu7.Calc(new[] {0}));
+            Assert.AreEqual(5, kyu7.Calc(new[] {1,1,1,1,1}));
+
+            //linq
+            Assert.AreEqual(31, kyu7.CalcLinq(new[] { 0, 2, 1, -6, -3, 3 }));
+            Assert.AreEqual(0, kyu7.CalcLinq(new[] { 0 }));
+            Assert.AreEqual(5, kyu7.CalcLinq(new[] { 1, 1, 1, 1, 1 }));
+
+        }
+
     }
 }
