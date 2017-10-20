@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CodeWars
 {
-    public class kyu6
+    public class Kyu6
     {
         public static int Persistence(long n)
         {

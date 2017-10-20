@@ -9,16 +9,16 @@ namespace UnitTestCodeWars
         [TestMethod]
         public void Digitize()
         {
-            Assert.AreEqual(new long [] {1,3,2,5,3}, kyu8.Digitize(35231));
+            Assert.AreEqual(new long [] {1,3,2,5,3}, Kyu8.Digitize(35231));
         }
 
         [TestMethod]
         public void Remove_char()
         {
-           Assert.AreEqual("loquen",kyu8.Remove_char("eloquent"));
-           Assert.AreEqual("ountr",kyu8.Remove_char("country"));
-           Assert.AreEqual("erso", kyu8.Remove_char("person"));
-           Assert.AreEqual("",kyu8.Remove_char("ok"));
+           Assert.AreEqual("loquen",Kyu8.Remove_char("eloquent"));
+           Assert.AreEqual("ountr",Kyu8.Remove_char("country"));
+           Assert.AreEqual("erso", Kyu8.Remove_char("person"));
+           Assert.AreEqual("",Kyu8.Remove_char("ok"));
          }
 
     }

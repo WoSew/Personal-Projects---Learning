@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace CodeWars
 {
-    public class kyu7
+    public class Kyu7
     {
         public static string PrinterError(string s)
         {

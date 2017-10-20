@@ -2,7 +2,7 @@
 
 namespace CodeWars
 {
-    public class kyu8
+    public class Kyu8
     {
         public static long[] Digitize(long n)
         {
@@ -38,7 +38,7 @@ namespace CodeWars
         public static string Remove_char(string s)
         {
             string result = "";
-            for (int i = 2; i < s.Length-1; i++)
+            for (int i = 1; i < s.Length-1; i++)
             {
                 result += s[i];
             }
