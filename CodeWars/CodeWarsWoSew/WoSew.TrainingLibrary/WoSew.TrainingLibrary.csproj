@@ -41,12 +41,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Base\Inheritance\StringDictionary.cs" />
+    <Compile Include="Common\StringOperations\DictionarySimple.cs" />
+    <Compile Include="Developers\WoSew\StringOperations\WoSewStringOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\Interfaces\" />
-    <Folder Include="Common\StringOperations\" />
-    <Folder Include="Developers\WoSew\WoSewStringOperations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

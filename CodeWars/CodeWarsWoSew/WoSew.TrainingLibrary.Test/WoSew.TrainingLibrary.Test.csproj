@@ -48,14 +48,19 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\StringOperations\DictionarySimpleTest.cs" />
+    <Compile Include="Developers\WoSew\StringOperationsTest\WoSewStringOperationsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Common\" />
-    <Folder Include="Developers\WoSew\WoSewStringOperationsTest\" />
+    <ProjectReference Include="..\WoSew.TrainingLibrary\WoSew.TrainingLibrary.csproj">
+      <Project>{4BD304A9-301E-496E-BF72-687020FE0D58}</Project>
+      <Name>WoSew.TrainingLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
