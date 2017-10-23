@@ -14,7 +14,6 @@ namespace CodeWars
             Kyu7.NbDig(25, 0);
             Kyu6.Divisors(16);
             Kyu8.Remove_char("eloquent");
-            Kyu8.Digitize(35231);
             Kyu6.Persistence(39);
 
         }

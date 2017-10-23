@@ -70,5 +70,15 @@ namespace CodeWars
                 .Sum();
         }
 
+        public static string[] SortByLength(string[] array)
+        {
+            return  array.OrderBy(s => s.Length).ToArray();
+        }
+
+        public static Dictionary<string, int> CountingArrayElements(List<string> lst)
+        {
+            return lst.GroupBy(s => s).ToDictionary(x => x.Key, y => y.Count());
+        }
+
     }
 }

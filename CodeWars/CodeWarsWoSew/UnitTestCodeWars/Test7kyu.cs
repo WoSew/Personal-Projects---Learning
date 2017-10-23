@@ -1,4 +1,5 @@
-﻿using CodeWars;
+﻿using System.Collections.Generic;
+using CodeWars;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestCodeWars
@@ -40,6 +41,21 @@ namespace UnitTestCodeWars
             Assert.AreEqual(5, Kyu7.CalcLinq(new[] { 1, 1, 1, 1, 1 }));
 
         }
+
+        [TestMethod]
+        public void SortByLength()
+        {
+            CollectionAssert.AreEqual(new string[] { "I", "To", "Beg", "Life" }, Kyu7.SortByLength(new string[] { "Beg", "Life", "I", "To" }));
+            CollectionAssert.AreEqual(new string[] { "", "Pizza", "Brains", "Moderately" }, Kyu7.SortByLength(new string[] { "", "Moderately", "Brains", "Pizza" }));
+            CollectionAssert.AreEqual(new string[] { "Short", "Longer", "Longest" }, Kyu7.SortByLength(new string[] { "Longer", "Longest", "Short" }));
+        }
+
+        [TestMethod]
+        public void CountingArrayElements()
+        {
+            CollectionAssert.AreEqual(new Dictionary<string, int> { { "a", 2 }, { "b", 3 } }, Kyu7.CountingArrayElements(new List<string> { "a", "b", "b", "a", "b" }));
+        }
+
 
     }
 }

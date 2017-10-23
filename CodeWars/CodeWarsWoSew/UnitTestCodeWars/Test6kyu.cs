@@ -18,10 +18,10 @@ namespace UnitTestCodeWars
         [TestMethod]
         public void Divisors()
         {
-            Assert.AreEqual(new int[] { 3, 5 }, Kyu6.Divisors(15));
-            Assert.AreEqual(new int[] { 2, 4, 8 }, Kyu6.Divisors(16));
-            Assert.AreEqual(new int[] { 11, 23 }, Kyu6.Divisors(253));
-            Assert.AreEqual(new int[] { 2, 3, 4, 6, 8, 12 }, Kyu6.Divisors(24));
+            CollectionAssert.AreEqual(new int[] { 3, 5 }, Kyu6.Divisors(15));
+            CollectionAssert.AreEqual(new int[] { 2, 4, 8 }, Kyu6.Divisors(16));
+            CollectionAssert.AreEqual(new int[] { 11, 23 }, Kyu6.Divisors(253));
+            CollectionAssert.AreEqual(new int[] { 2, 3, 4, 6, 8, 12 }, Kyu6.Divisors(24));
         }
 
     }
