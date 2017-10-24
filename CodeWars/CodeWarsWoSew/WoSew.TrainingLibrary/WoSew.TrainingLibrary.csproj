@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="Common\Base\Inheritance\StringDictionary.cs" />
     <Compile Include="Common\StringOperations\DictionarySimple.cs" />
+    <Compile Include="Common\Training\Linq\LinqSort.cs" />
+    <Compile Include="Common\Training\Linq\LinqWhere.cs" />
     <Compile Include="Developers\WoSew\StringOperations\WoSewStringOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
