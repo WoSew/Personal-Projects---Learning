@@ -24,5 +24,18 @@ namespace UnitTestCodeWars
             CollectionAssert.AreEqual(new int[] { 2, 3, 4, 6, 8, 12 }, Kyu6.Divisors(24));
         }
 
+        [TestMethod]
+        public void TribonacciSequence()
+        {
+            CollectionAssert.AreEqual(new double[] { 1, 1, 1, 3, 5, 9, 17, 31, 57, 105 }, Kyu6.TribonacciSequence(new double[] { 1, 1, 1 }, 10));
+            CollectionAssert.AreEqual(new double[] { 0, 0, 1, 1, 2, 4, 7, 13, 24, 44 }, Kyu6.TribonacciSequence(new double[] { 0, 0, 1 }, 10));
+            CollectionAssert.AreEqual(new double[] { 0, 1, 1, 2, 4, 7, 13, 24, 44, 81 }, Kyu6.TribonacciSequence(new double[] { 0, 1, 1 }, 10));
+            CollectionAssert.AreEqual(new double[] { 0 }, Kyu6.TribonacciSequence(new double[] { 0, 19, 5 }, 0));
+            CollectionAssert.AreEqual(new double[] { 1 }, Kyu6.TribonacciSequence(new double[] { 1, 1, 1 }, 1));
+            CollectionAssert.AreEqual(new double[] { 1, 2 }, Kyu6.TribonacciSequence(new double[] { 1, 2, 3 }, 2));
+            CollectionAssert.AreEqual(new double[] { 1, 2, 3}, Kyu6.TribonacciSequence(new double[] { 1, 2, 3 }, 3));
+
+        }
+
     }
 }
