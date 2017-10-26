@@ -27,14 +27,14 @@ namespace WoSew.TrainingLibrary.Test.Common.StringOperations
         [TestMethod]
         public void Wildcard()
         {
-            Assert.IsTrue(DictionarySimple.Wildcard("maly", "malyTEST"));
-            Assert.IsTrue(DictionarySimple.Wildcard("maly", "malyROWER"));
-            Assert.IsTrue(DictionarySimple.Wildcard("maly", "maly123123123"));
-            Assert.IsTrue(DictionarySimple.Wildcard("maly", "malysz"));
+            Assert.IsTrue(DictionarySimple.Wildcard("malyTEST", "maly"));
+            Assert.IsTrue(DictionarySimple.Wildcard("malyROWER", "maly"));
+            Assert.IsTrue(DictionarySimple.Wildcard("maly123123123", "maly"));
+            Assert.IsTrue(DictionarySimple.Wildcard("malysz", "maly"));
 
-            Assert.IsFalse(DictionarySimple.Wildcard("maly", "duzymaly"));
-            Assert.IsFalse(DictionarySimple.Wildcard("maly", "mal"));
-            Assert.IsFalse(DictionarySimple.Wildcard("maly", ""));
+            Assert.IsFalse(DictionarySimple.Wildcard("duzymaly", "maly"));
+            Assert.IsFalse(DictionarySimple.Wildcard("mal", "maly"));
+            Assert.IsFalse(DictionarySimple.Wildcard("", "maly"));
            
         }
     }

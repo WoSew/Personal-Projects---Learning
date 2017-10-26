@@ -21,7 +21,7 @@ namespace WoSew.TrainingLibrary.Common.StringOperations
             return palindromCandidate.Reverse().SequenceEqual(palindromCandidate);
         }
 
-        public static bool Wildcard(this string wildcardCandidate, string keyValue)
+        public static bool Wildcard(this string keyValue, string wildcardCandidate)
         {
             if (wildcardCandidate.Length > keyValue.Length) return false;
 

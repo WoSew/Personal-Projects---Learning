@@ -22,12 +22,30 @@ namespace WoSew.TrainingLibrary.Developers.WoSew.StringOperations
 
         public override List<T> GetPalindromSet()
         {
-            throw new System.NotImplementedException();
+            List<T> itemList = new List<T>();
+
+            foreach (var item in this)
+            {
+                if (item.Key.IsPalindrome())
+                {
+                    itemList.Add(this[item.Key]);
+                }
+            }
+            return itemList;
         }
 
         public override List<T> GetWildcardSet(string wildcard)
         {
-            throw new System.NotImplementedException();
+            List<T> itemList = new List<T>();
+
+            foreach (var item in this)
+            {
+                if (item.Key.Wildcard(wildcard))
+                {
+                    itemList.Add(this[item.Key]);
+                }
+            }
+            return itemList;
         }
     }
 }
