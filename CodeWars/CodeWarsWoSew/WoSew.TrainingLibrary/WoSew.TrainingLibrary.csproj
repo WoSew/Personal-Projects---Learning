@@ -41,7 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Base\Inheritance\StringDictionary.cs" />
+    <Compile Include="Common\Base\XML\Entieties\Transfer.cs" />
+    <Compile Include="Common\Base\XML\Logic\XmlParser.cs" />
+    <Compile Include="Common\Base\XML\Entieties\TransferBase.cs" />
     <Compile Include="Common\StringOperations\DictionarySimple.cs" />
+    <Compile Include="Common\Training\Exceptions\WoSewExceptions.cs" />
     <Compile Include="Common\Training\Linq\LinqSort.cs" />
     <Compile Include="Common\Training\Linq\LinqWhere.cs" />
     <Compile Include="Developers\WoSew\StringOperations\WoSewStringOperations.cs" />
@@ -49,6 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\Base\XML\ExampleXML\WoSewXML.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

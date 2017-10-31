@@ -51,5 +51,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WoSew.TrainingLibrary\WoSew.TrainingLibrary.csproj">
+      <Project>{4BD304A9-301E-496E-BF72-687020FE0D58}</Project>
+      <Name>WoSew.TrainingLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

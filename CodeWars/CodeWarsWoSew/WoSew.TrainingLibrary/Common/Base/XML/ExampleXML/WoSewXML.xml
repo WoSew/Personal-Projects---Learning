@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<transfers>
+  <transfer bank="PKO SA">
+    <account>625555102054875412</account>
+    <owner>WojciechSeweryn</owner>
+    <sum>5000</sum>
+    <sourceAccount>987456321</sourceAccount>
+    <date>2015-04-12</date>
+  </transfer>
+  <transfer bank="Milenium">
+    <account>9888888888888</account>
+    <owner>TomaszSeweryn</owner>
+    <sum>14154</sum>
+    <sourceAccount>65658457</sourceAccount>
+    <date>2010-10-09</date>
+  </transfer>
+  <transfer bank="mBank">
+    <account>7771233123</account>
+    <owner>LukaszOswiecimski</owner>
+    <sum>100</sum>
+    <sourceAccount>1892</sourceAccount>
+    <date>1998-01-01</date>
+  </transfer>
+  <transfer bank="PEKAO BP">
+    <account>875412625555102054</account>
+    <owner>DupaSalata</owner>
+    <sum>5230</sum>
+    <sourceAccount>12312987456321</sourceAccount>
+    <date>2015-12-30</date>
+  </transfer>
+</transfers>

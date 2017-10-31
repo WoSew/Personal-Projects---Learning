@@ -49,8 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\StringOperations\DictionarySimpleTest.cs" />
+    <Compile Include="Common\Training\Exceptions\WoSewExceptionsTest.cs" />
     <Compile Include="Common\Training\Linq\LinqSortTest.cs" />
     <Compile Include="Common\Training\Linq\LinqWhereTest.cs" />
+    <Compile Include="Common\XML\XmlParserTest.cs" />
     <Compile Include="Developers\WoSew\StringOperationsTest\WoSewStringOperationsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

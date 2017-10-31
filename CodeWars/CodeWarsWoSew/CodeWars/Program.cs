@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WoSew.TrainingLibrary.Test.Common.Training.Exceptions;
 
 namespace CodeWars
 {
@@ -10,6 +11,12 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
+            WoSewExceptions wsExceptions = new WoSewExceptions();
+            wsExceptions.SelectiveExceptions();
+            wsExceptions.TryCatchFinally();
+            wsExceptions.TryCatchFinallyException();
+
+
             Kyu7.Calc(new[] { -2, -1, 0, 1, 2 });
             Kyu7.NbDig(25, 0);
             Kyu6.Divisors(16);
