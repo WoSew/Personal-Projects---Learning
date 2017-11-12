@@ -56,6 +56,15 @@ namespace UnitTestCodeWars
             CollectionAssert.AreEqual(new Dictionary<string, int> { { "a", 2 }, { "b", 3 } }, Kyu7.CountingArrayElements(new List<string> { "a", "b", "b", "a", "b" }));
         }
 
+        [TestMethod]
+        public void SumDigits()
+        {
+            Assert.AreEqual(5, Kyu7.SumDigits(32));
+            Assert.AreEqual(12, Kyu7.SumDigits(75));
+            Assert.AreEqual(5, Kyu7.SumDigits(-32));
+            Assert.AreEqual(1, Kyu7.SumDigits(100));
+        }
+
 
     }
 }

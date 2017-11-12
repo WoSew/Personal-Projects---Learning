@@ -44,6 +44,7 @@ namespace WoSew.TrainingLibrary.Test.Common.Training.Exceptions
 
         public void SelectiveExceptions()
         {
+
             string[] exampleString = new string[5];
 
             try
@@ -59,6 +60,22 @@ namespace WoSew.TrainingLibrary.Test.Common.Training.Exceptions
                 Console.WriteLine("Another error");
             }
 
+
+
+        }
+
+        public void ThrowExceptions()
+        {
+            //Throw Exceptions
+            try
+            {
+                throw new IndexOutOfRangeException();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Wojtek Throw exception");
+
+            }
         }
 
     }

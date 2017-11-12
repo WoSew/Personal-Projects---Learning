@@ -80,5 +80,16 @@ namespace CodeWars
             return lst.GroupBy(s => s).ToDictionary(x => x.Key, y => y.Count());
         }
 
+        public static int SumDigits(int number)
+        {
+            int sum = 0;
+            if (number <0) number = -number;
+            while (number != 0)
+            {
+                sum += number % 10;
+                number /= 10;
+            }
+            return sum;
+        }
     }
 }

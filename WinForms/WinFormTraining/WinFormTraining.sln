@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{4F235BB3-4A42-4125-A86F-2920B221E7F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Button", "Button\Button.csproj", "{41215868-24A7-4355-AF7B-144E6468C56B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckBox", "CheckBox\CheckBox.csproj", "{9BCCB228-925C-426F-B706-1CFBB9F2C984}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormTraining", "FormTraining\FormTraining.csproj", "{0321921A-96FF-426E-9C7F-B6B5F8A7B49C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckedListBox", "CheckedListBox\CheckedListBox.csproj", "{C9848C8C-5CE3-4395-97E9-EBFB3ADF6503}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41215868-24A7-4355-AF7B-144E6468C56B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41215868-24A7-4355-AF7B-144E6468C56B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41215868-24A7-4355-AF7B-144E6468C56B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41215868-24A7-4355-AF7B-144E6468C56B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BCCB228-925C-426F-B706-1CFBB9F2C984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BCCB228-925C-426F-B706-1CFBB9F2C984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BCCB228-925C-426F-B706-1CFBB9F2C984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BCCB228-925C-426F-B706-1CFBB9F2C984}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0321921A-96FF-426E-9C7F-B6B5F8A7B49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0321921A-96FF-426E-9C7F-B6B5F8A7B49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0321921A-96FF-426E-9C7F-B6B5F8A7B49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0321921A-96FF-426E-9C7F-B6B5F8A7B49C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9848C8C-5CE3-4395-97E9-EBFB3ADF6503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9848C8C-5CE3-4395-97E9-EBFB3ADF6503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9848C8C-5CE3-4395-97E9-EBFB3ADF6503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9848C8C-5CE3-4395-97E9-EBFB3ADF6503}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{41215868-24A7-4355-AF7B-144E6468C56B} = {4F235BB3-4A42-4125-A86F-2920B221E7F5}
+		{9BCCB228-925C-426F-B706-1CFBB9F2C984} = {4F235BB3-4A42-4125-A86F-2920B221E7F5}
+		{0321921A-96FF-426E-9C7F-B6B5F8A7B49C} = {4F235BB3-4A42-4125-A86F-2920B221E7F5}
+		{C9848C8C-5CE3-4395-97E9-EBFB3ADF6503} = {4F235BB3-4A42-4125-A86F-2920B221E7F5}
+	EndGlobalSection
+EndGlobal
