@@ -63,6 +63,7 @@ namespace ListBox
             this.lb_valueList.TabIndex = 0;
             this.lb_valueList.DragDrop += new System.Windows.Forms.DragEventHandler(this.lb_valueList_DragDrop);
             this.lb_valueList.DragEnter += new System.Windows.Forms.DragEventHandler(this.lb_valueList_DragEnter);
+            this.lb_valueList.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lb_valueList_MouseDown);
             // 
             // l_value
             // 
@@ -166,6 +167,7 @@ namespace ListBox
             this.lb_selected.TabIndex = 7;
             this.lb_selected.DragDrop += new System.Windows.Forms.DragEventHandler(this.lb_selected_DragDrop);
             this.lb_selected.DragEnter += new System.Windows.Forms.DragEventHandler(this.lb_selected_DragEnter);
+            this.lb_selected.DragOver += new System.Windows.Forms.DragEventHandler(this.lb_selected_DragOver);
             // 
             // label1
             // 
