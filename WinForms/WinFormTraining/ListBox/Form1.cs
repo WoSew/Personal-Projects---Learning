@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace ListBox
 {
@@ -54,23 +55,36 @@ namespace ListBox
         {
             lb_valueList.Items.Clear();
         }
-        /*
+        
         private void lb_selected_DragEnter(object sender, DragEventArgs e)
         {
-            e.Effect = DragDropEffects.Copy;
+            if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
         }
 
         private void lb_selected_DragDrop(object sender, DragEventArgs e)
         {
-            var selectedStrings = lb_valueList.SelectedItems;
-            
-                lb_selected.Items.Add(selectedStrings);
-            
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+            foreach (string file in files)
+            {
+                lb_selected.Items.Add(file);
+            }
+        }
+        
+        private void lb_valueList_DragEnter(object sender, DragEventArgs e)
+        {
+
+            if (e.Data.GetDataPresent(DataFormats.FileDrop)) e.Effect = DragDropEffects.Copy;
         }
 
-        private void lb_selected_MouseDown(object sender, MouseEventArgs e)
+        private void lb_valueList_DragDrop(object sender, DragEventArgs e)
         {
-            lb_selected.DoDragDrop(lb_valueList, DragDropEffects.Copy);
-        }*/
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+            foreach (string file in files)
+            {
+                lb_valueList.Items.Add(file);
+            }
+        }
     }
 }

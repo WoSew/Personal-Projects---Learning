@@ -9,5 +9,9 @@ namespace MasterMind
         public int XCoordinate { get; set; }
         public int YCoordinate { get; set; }
         public Color Color { get; set; }
+        public void GetPlayerColor()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

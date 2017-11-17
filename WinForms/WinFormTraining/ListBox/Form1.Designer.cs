@@ -1,4 +1,6 @@
-﻿namespace ListBox
+﻿using System.Windows.Forms;
+
+namespace ListBox
 {
     partial class Form1
     {
@@ -44,6 +46,7 @@
             // 
             // lb_valueList
             // 
+            this.lb_valueList.AllowDrop = true;
             this.lb_valueList.FormattingEnabled = true;
             this.lb_valueList.ItemHeight = 16;
             this.lb_valueList.Items.AddRange(new object[] {
@@ -58,6 +61,8 @@
             this.lb_valueList.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lb_valueList.Size = new System.Drawing.Size(280, 148);
             this.lb_valueList.TabIndex = 0;
+            this.lb_valueList.DragDrop += new System.Windows.Forms.DragEventHandler(this.lb_valueList_DragDrop);
+            this.lb_valueList.DragEnter += new System.Windows.Forms.DragEventHandler(this.lb_valueList_DragEnter);
             // 
             // l_value
             // 
@@ -151,16 +156,16 @@
             // 
             // lb_selected
             // 
+            this.lb_selected.AllowDrop = true;
             this.lb_selected.FormattingEnabled = true;
             this.lb_selected.ItemHeight = 16;
             this.lb_selected.Location = new System.Drawing.Point(316, 37);
             this.lb_selected.Name = "lb_selected";
+            this.lb_selected.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.lb_selected.Size = new System.Drawing.Size(273, 148);
             this.lb_selected.TabIndex = 7;
-            /*
             this.lb_selected.DragDrop += new System.Windows.Forms.DragEventHandler(this.lb_selected_DragDrop);
             this.lb_selected.DragEnter += new System.Windows.Forms.DragEventHandler(this.lb_selected_DragEnter);
-            this.lb_selected.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lb_selected_MouseDown);*/
             // 
             // label1
             // 
@@ -195,6 +200,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void Lb_selected_DragEnter(object sender, System.Windows.Forms.DragEventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
 
         #endregion
