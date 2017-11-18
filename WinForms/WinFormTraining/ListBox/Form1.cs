@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -117,6 +119,33 @@ namespace ListBox
                 string str = (string) e.Data.GetData(DataFormats.StringFormat);
 
                 lb_selected.Items.Add(str);
+            }
+        }
+
+        private void btn_open_Click(object sender, EventArgs e)
+        {
+            var filePath = lb_selected.SelectedItem.ToString();
+            if(File.Exists(filePath))
+            {
+                Process.Start("explorer.exe", filePath);
+            }
+        }
+
+        private void lb_selected_DoubleClick(object sender, EventArgs e)
+        {
+            var filePath = lb_selected.SelectedItem.ToString();
+            if (File.Exists(filePath))
+            {
+                Process.Start("explorer.exe", filePath);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var filePath = lb_selected.SelectedItem.ToString();
+            if (File.Exists(filePath))
+            {
+                Process.Start("explorer.exe", "/select, " + filePath);
             }
         }
     }

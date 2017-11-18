@@ -42,6 +42,8 @@ namespace ListBox
             this.btn_clear = new System.Windows.Forms.Button();
             this.lb_selected = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_open = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lb_valueList
@@ -160,14 +162,15 @@ namespace ListBox
             this.lb_selected.AllowDrop = true;
             this.lb_selected.FormattingEnabled = true;
             this.lb_selected.ItemHeight = 16;
-            this.lb_selected.Location = new System.Drawing.Point(316, 37);
+            this.lb_selected.Location = new System.Drawing.Point(325, 37);
             this.lb_selected.Name = "lb_selected";
             this.lb_selected.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lb_selected.Size = new System.Drawing.Size(273, 148);
+            this.lb_selected.Size = new System.Drawing.Size(273, 212);
             this.lb_selected.TabIndex = 7;
             this.lb_selected.DragDrop += new System.Windows.Forms.DragEventHandler(this.lb_selected_DragDrop);
             this.lb_selected.DragEnter += new System.Windows.Forms.DragEventHandler(this.lb_selected_DragEnter);
             this.lb_selected.DragOver += new System.Windows.Forms.DragEventHandler(this.lb_selected_DragOver);
+            this.lb_selected.DoubleClick += new System.EventHandler(this.lb_selected_DoubleClick);
             // 
             // label1
             // 
@@ -179,11 +182,33 @@ namespace ListBox
             this.label1.TabIndex = 8;
             this.label1.Text = "Selected values:";
             // 
+            // btn_open
+            // 
+            this.btn_open.Location = new System.Drawing.Point(316, 270);
+            this.btn_open.Name = "btn_open";
+            this.btn_open.Size = new System.Drawing.Size(273, 30);
+            this.btn_open.TabIndex = 9;
+            this.btn_open.Text = "Open file";
+            this.btn_open.UseVisualStyleBackColor = true;
+            this.btn_open.Click += new System.EventHandler(this.btn_open_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(316, 306);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(273, 30);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Open file folder";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 356);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_open);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lb_selected);
             this.Controls.Add(this.btn_clear);
@@ -223,6 +248,8 @@ namespace ListBox
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.ListBox lb_selected;
         private System.Windows.Forms.Label label1;
+        private Button btn_open;
+        private Button button1;
     }
 }
 
