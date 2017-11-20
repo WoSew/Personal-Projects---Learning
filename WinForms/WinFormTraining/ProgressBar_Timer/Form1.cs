@@ -18,6 +18,9 @@ namespace ProgressBar_Timer
             InitializeComponent();
         }
 
+        //temporary dictionary only for this training, I suspect the correct solution is a lot different
+        private Dictionary<string, string> UsersDB = new Dictionary<string, string>();
+
         private void btn_activate_Click(object sender, EventArgs e)
         {
 
@@ -30,28 +33,20 @@ namespace ProgressBar_Timer
 
             if (dataTable.Rows[0][0].ToString() == "1")
             {
-                if (timer1.Enabled) timer1.Enabled = true;
-                else timer1.Enabled = false;
-
-                //timer1.Enabled = !timer1.Enabled;
+                timer1.Enabled = !timer1.Enabled;
 
                 DialogResult result = MessageBox.Show("You have successfully logged in", "SINGED", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                if (result == DialogResult.OK)
-                {
-                    this.Close();
-
-                }
+       
+                if (result == DialogResult.OK) this.Close();
             }
-
-            else
-                MessageBox.Show("Please Check Your username and password", "Wrong Username and/or Password",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else MessageBox.Show("Please Check Your username and password", "Wrong Username and/or Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             pg_loadingBar.Increment(30);
         }
+
+
     }
 }
