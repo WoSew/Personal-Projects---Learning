@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeView", "TreeView\TreeVi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowLayoutPanel", "FlowLayoutPanel\FlowLayoutPanel.csproj", "{A0CF925B-33C0-4E1D-90FE-0707A863B832}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitContainer", "SplitContainer\SplitContainer.csproj", "{CDF2A70E-E0F1-4899-87F1-61D67EAF12D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{A0CF925B-33C0-4E1D-90FE-0707A863B832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0CF925B-33C0-4E1D-90FE-0707A863B832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0CF925B-33C0-4E1D-90FE-0707A863B832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF2A70E-E0F1-4899-87F1-61D67EAF12D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF2A70E-E0F1-4899-87F1-61D67EAF12D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF2A70E-E0F1-4899-87F1-61D67EAF12D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF2A70E-E0F1-4899-87F1-61D67EAF12D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,5 +148,6 @@ Global
 		{8E8413AA-256E-4E2E-89ED-5C8B8DF11238} = {4F235BB3-4A42-4125-A86F-2920B221E7F5}
 		{EF039823-936D-4676-A9D2-4BD2257EF282} = {4F235BB3-4A42-4125-A86F-2920B221E7F5}
 		{A0CF925B-33C0-4E1D-90FE-0707A863B832} = {4F235BB3-4A42-4125-A86F-2920B221E7F5}
+		{CDF2A70E-E0F1-4899-87F1-61D67EAF12D9} = {4F235BB3-4A42-4125-A86F-2920B221E7F5}
 	EndGlobalSection
 EndGlobal
