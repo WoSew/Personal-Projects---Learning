@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowLayoutPanel", "FlowLayo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitContainer", "SplitContainer\SplitContainer.csproj", "{CDF2A70E-E0F1-4899-87F1-61D67EAF12D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContexMenuStrip", "ContexMenuStrip\ContexMenuStrip.csproj", "{4E1D7364-9A07-4763-AA4D-72F235F2A1C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{CDF2A70E-E0F1-4899-87F1-61D67EAF12D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDF2A70E-E0F1-4899-87F1-61D67EAF12D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDF2A70E-E0F1-4899-87F1-61D67EAF12D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E1D7364-9A07-4763-AA4D-72F235F2A1C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1D7364-9A07-4763-AA4D-72F235F2A1C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E1D7364-9A07-4763-AA4D-72F235F2A1C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E1D7364-9A07-4763-AA4D-72F235F2A1C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -149,5 +155,6 @@ Global
 		{EF039823-936D-4676-A9D2-4BD2257EF282} = {4F235BB3-4A42-4125-A86F-2920B221E7F5}
 		{A0CF925B-33C0-4E1D-90FE-0707A863B832} = {4F235BB3-4A42-4125-A86F-2920B221E7F5}
 		{CDF2A70E-E0F1-4899-87F1-61D67EAF12D9} = {4F235BB3-4A42-4125-A86F-2920B221E7F5}
+		{4E1D7364-9A07-4763-AA4D-72F235F2A1C2} = {4F235BB3-4A42-4125-A86F-2920B221E7F5}
 	EndGlobalSection
 EndGlobal
