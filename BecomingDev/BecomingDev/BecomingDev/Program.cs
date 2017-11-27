@@ -11,10 +11,8 @@ namespace BecomingDev
     {
         static void Main(string[] args)
         {
-            Order order1 = new Order(1, 100);
-
-            User exampleUser = new User("email@user.com", "secret");
-           // exampleUser.
+            Race race = new Race();
+            race.Begin();
         }
     }
 }
