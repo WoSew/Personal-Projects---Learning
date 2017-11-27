@@ -12,7 +12,7 @@ namespace BecomingDev.Models
     {
         public void SendMessage(string receiver, string title, string message)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 
@@ -81,14 +81,17 @@ namespace BecomingDev.Models
         public void ProcessOdrer(string email, int orderId)
         {
             User user = _database.GetUser(email); //Fetch from db (pobrać z db)
-            //TODO: write validation
             if (user == null)
             {
-                //error
+                throw new Exception("An unexpected error occurred");
             }
-            Order order = _database.GetOrder(orderId); //Fetch from db
-            //TODO: write validation
 
+            Order order = _database.GetOrder(orderId); //Fetch from db
+            if (orderId == null)
+            {
+                throw new Exception("An unexpected error occurred");
+            }
+            
             user.PurchaseOrder(order);
             _database.SaveChanges();
             _emailSender.SendMessage(email, "Order purchased", "You've purchased and order.");
