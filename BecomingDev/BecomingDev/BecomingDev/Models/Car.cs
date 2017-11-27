@@ -61,6 +61,12 @@ namespace BecomingDev.Models
             Speed += 80;
             Console.WriteLine($"Running at:{Speed} km/h.");
         }
+
+        public void DisplayInfo()
+        {
+            Console.WriteLine("Sport car.");
+        }
+
     }
 
     public class Race
@@ -85,6 +91,34 @@ namespace BecomingDev.Models
 
         }
 
+        public void Casting() // rzutowanie
+        {
+            Car sportCar = new SportCar();
+            Car truck = new Truck();
+
+            //sportCar.DisplayInfo(); // can't use metod DisplayInfo in this way, becaouse sportCar is a object from class Car, not SportCar. Solution of this problem is casting look down:
+
+            //down casting - rzutowaniu w dół 
+            SportCar realSportCar = (SportCar) sportCar;
+            realSportCar.DisplayInfo();
+
+            //up casting - rzutowanie w górę
+            Car realCar = (Car) realSportCar; // now metod DisplayInfo is not available
+
+            //more secure approach:
+            bool isSportcar = sportCar is SportCar; //I check if I can cast a sportCar for the type SportCar
+            if (isSportcar)
+            {
+                ((SportCar)sportCar).DisplayInfo();
+            }
+
+            SportCar castedSportCar = sportCar as SportCar;
+            if (castedSportCar != null)
+            {
+                castedSportCar.DisplayInfo();
+            }
+
+        }
 
     }
 
