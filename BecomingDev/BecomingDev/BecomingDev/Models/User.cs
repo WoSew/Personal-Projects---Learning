@@ -1,9 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace BecomingDev.Models
 {
     public class User
     {
+
+        private ISet<Order> _orders = new HashSet<Order>(); // set - collection with unique elements
+
         public string Email { get; private set; }
         public string Password { get; private set; }
         public string FirstName { get; set; }
@@ -12,6 +16,8 @@ namespace BecomingDev.Models
         public bool IsActive { get; private set; }
         public DateTime UpdatedAt { get; private set; } //specifies the date of the last update
         public decimal Funds { get; set; } // determines the amount of money used
+
+        public IEnumerable<Order> Orders { get { return _orders; } } // we create this like this (not List<Order> Orders {get; private set; }) to provide encapsulation. In the second case (case with List) we would receive possibility to add orders to object omitting the metod PurchaseOrders
 
         public User(string email, string password)
         {
@@ -109,6 +115,7 @@ namespace BecomingDev.Models
 
             order.Purchase();
             Funds -= orderPrice;
+            _orders.Add(order);
             UpDate();
         }
 
