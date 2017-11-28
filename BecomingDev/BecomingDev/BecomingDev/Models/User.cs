@@ -1,10 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 
 namespace BecomingDev.Models
 {
+    public class Person
+    {
+        public string FirstName { get; set; }
+    }
+    
+
     public class User
     {
+
+        private Person _person;
 
         private ISet<Order> _orders = new HashSet<Order>(); // set - collection with unique elements
 
@@ -18,6 +27,12 @@ namespace BecomingDev.Models
         public decimal Funds { get; set; } // determines the amount of money used
 
         public IEnumerable<Order> Orders { get { return _orders; } } // we create this like this (not List<Order> Orders {get; private set; }) to provide encapsulation. In the second case (case with List) we would receive possibility to add orders to object omitting the metod PurchaseOrders
+
+        //composition
+        public User(Person person)
+        {
+            FirstName = person.FirstName;
+        }
 
         public User(string email, string password)
         {

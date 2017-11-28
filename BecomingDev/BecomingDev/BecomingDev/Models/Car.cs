@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace BecomingDev.Models
 {
+
     public abstract class Car // We define abstract classes to let the user know that the instance of this entity itself does not make much sense. That is why we need to inherit and build on it in this way
     {
         public double Speed { get; protected set; } = 100; //default value 

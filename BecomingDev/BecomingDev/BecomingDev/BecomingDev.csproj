@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Car.cs" />
+    <Compile Include="Models\Generics.cs" />
     <Compile Include="Models\Interfaces.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\User.cs" />
