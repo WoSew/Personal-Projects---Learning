@@ -11,7 +11,7 @@ namespace BecomingDev
     {
         static void Main(string[] args)
         {
-            var x = 0;
+            var xx = 0;
             var user = new User("user@email.com", "secret");
 
             //anonymus type - VAR
