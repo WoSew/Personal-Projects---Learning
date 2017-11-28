@@ -11,8 +11,31 @@ namespace BecomingDev
     {
         static void Main(string[] args)
         {
-            Exceptions exceptions = new Exceptions();
-            exceptions.Test();
+            var x = 0;
+            var user = new User("user@email.com", "secret");
+
+            //anonymus type - VAR
+            var anonymusUser = new
+            {
+                Id = 1,
+                Email = "abc@email.com",
+                Adress = new 
+                {
+                    Street = "Sienkiewicza 2a"
+                }
+            };
+
+            List<User> users = new List<User>();
+            var differentUsers = users.Select( x=> new
+            {
+                Email = x.Email
+            });
+
+            foreach (var differentUser in differentUsers)
+            {
+                //differentUser.Email;
+            }
+
         }
     }
 }
