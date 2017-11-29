@@ -60,6 +60,14 @@ namespace BecomingDev.Models
             {
                 throw new Exception("Password is incorrect.");
             }
+            if (password.Length < 3)
+            {
+                throw new Exception("Password is too short.");
+            }
+            if (password.Length > 30)
+            {
+                throw new Exception("Password is too long.");
+            }
             if (Password == password) //comes out of the method if password is the same
             {
                 return;

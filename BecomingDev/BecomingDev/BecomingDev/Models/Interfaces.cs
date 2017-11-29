@@ -94,7 +94,7 @@ namespace BecomingDev.Models
             
             user.PurchaseOrder(order);
             _database.SaveChanges();
-            _emailSender.SendMessage(email, "Order purchased", "You've purchased and order.");
+            _emailSender.SendMessage(email, "Order purchased", "You've purchased an order.");
 
         }
     }
