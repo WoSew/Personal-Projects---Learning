@@ -96,7 +96,7 @@ namespace BecomingDev.Models
 
             //Func 
 
-            Func<int, int, int> adder = (x, y) => x + y; // Func < zwracany typ, parametr 1, parametr2...>
+            Func<int, int, int> adder = (x, y) => x + y; // Func <parametr 1, parametr2..., zwracany typ>
             var sum = adder(1, 2);
             advanceWriter("Sum: ", sum);
 
