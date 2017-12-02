@@ -23,7 +23,7 @@ namespace BecomingDev.Models
 
     public class Triple<TFirst, TSecond, TThird> : Pair<TFirst, TSecond>
     {
-        public TThird Third { get; set; }
+        public TThird Third { get; set; } 
     }
 
 

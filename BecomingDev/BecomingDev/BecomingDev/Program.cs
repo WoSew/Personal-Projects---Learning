@@ -11,22 +11,24 @@ namespace BecomingDev
     {
         static void Main(string[] args)
         {
+            #region anonymus type - VAR
+            /*
             var xx = 0;
             var user = new User("user@email.com", "secret");
 
-            //anonymus type - VAR
+
             var anonymusUser = new
             {
                 Id = 1,
                 Email = "abc@email.com",
-                Adress = new 
+                Adress = new
                 {
                     Street = "Sienkiewicza 2a"
                 }
             };
 
             List<User> users = new List<User>();
-            var differentUsers = users.Select( x=> new
+            var differentUsers = users.Select(x => new
             {
                 Email = x.Email
             });
@@ -35,6 +37,12 @@ namespace BecomingDev
             {
                 //differentUser.Email;
             }
+            */
+
+            #endregion
+
+            var delegates = new Delegates();
+            delegates.Test();
 
         }
     }
