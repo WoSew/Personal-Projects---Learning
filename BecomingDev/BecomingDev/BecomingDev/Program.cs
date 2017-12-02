@@ -41,8 +41,8 @@ namespace BecomingDev
 
             #endregion
 
-            var delegates = new Delegates();
-            delegates.Test();
+            var lambdaExpressions = new LambdaExpressions();
+            lambdaExpressions.Test();
 
         }
     }
