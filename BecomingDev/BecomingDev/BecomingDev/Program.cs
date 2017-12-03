@@ -41,8 +41,8 @@ namespace BecomingDev
 
             #endregion
 
-            var lambdaExpressions = new LambdaExpressions();
-            lambdaExpressions.Test();
+            var eventSandbox = new EventSandbox();
+            eventSandbox.Test();
 
         }
     }

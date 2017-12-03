@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net.Http;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 
 namespace BecomingDev.Models
@@ -139,4 +140,56 @@ namespace BecomingDev.Models
             }
         }
     }
+
+    public class Events
+    {
+        public delegate void UpdateStatus(string status);
+
+        public event UpdateStatus StatusUpdated;
+
+        public void StartUpdatingStatus()
+        {
+            while (true)
+            {
+                var message = $"status, ticks {DateTime.UtcNow.Ticks}";
+
+                StatusUpdated?.Invoke(message);
+                Thread.Sleep(1000);
+
+                /*
+                    this record means the same as:  StatusUpdated?.Invoke(message);                                 
+                 
+                if (StatusUpdated != null)
+                {
+                    StatusUpdated(message);
+                }
+                */
+            }
+        }
+    }
+
+    public class EventSandbox
+    {
+        public void Test()
+        {
+            var events = new Events();
+
+
+            events.StatusUpdated += DisplayStatus;
+            events.StatusUpdated += DisplayStatus2;
+            
+            events.StartUpdatingStatus();
+        }
+
+
+        public void DisplayStatus(string message)
+        {
+            Console.WriteLine($"{message}");
+        }
+        public void DisplayStatus2(string message)
+        {
+            Console.WriteLine($"2 {message}");
+        }
+    }
+
 }
