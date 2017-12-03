@@ -42,7 +42,7 @@ namespace BecomingDev
             #endregion
 
             var enumerations = new Enumerations();
-            enumerations.Test();
+            enumerations.TestLinq();
         }
     }
 }
