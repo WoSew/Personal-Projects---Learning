@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Exceptions.cs" />
+    <Compile Include="Models\Extensions.cs" />
     <Compile Include="Models\Functions.cs" />
     <Compile Include="Models\Generics.cs" />
     <Compile Include="Models\Interfaces.cs" />

@@ -41,8 +41,12 @@ namespace BecomingDev
 
             #endregion
 
-            var eventSandbox = new EventSandbox();
-            eventSandbox.Test();
+            var text = "abc";
+
+            if (!string.IsNullOrWhiteSpace(text))
+            {
+                Console.WriteLine("hello");
+            }
 
         }
     }
