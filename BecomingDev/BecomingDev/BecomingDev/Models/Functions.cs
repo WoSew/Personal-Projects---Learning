@@ -141,11 +141,23 @@ namespace BecomingDev.Models
         }
     }
 
+    public class StatusEventArgs : EventArgs
+    {
+        public string Status { get; }
+
+        public StatusEventArgs(string status)
+        {
+            Status = status;
+        }
+    }
+    
     public class Events
     {
         public delegate void UpdateStatus(string status);
 
         public event UpdateStatus StatusUpdated;
+
+        public EventHandler<StatusEventArgs> StatusUpdatedAgain;
 
         public void StartUpdatingStatus()
         {
@@ -153,7 +165,7 @@ namespace BecomingDev.Models
             {
                 var message = $"status, ticks {DateTime.UtcNow.Ticks}";
 
-                StatusUpdated?.Invoke(message);
+                StatusUpdatedAgain?.Invoke(this, new StatusEventArgs(message));
                 Thread.Sleep(1000);
 
                 /*
@@ -175,7 +187,10 @@ namespace BecomingDev.Models
             var events = new Events();
 
 
-            events.StatusUpdated += DisplayStatus;
+            events.StatusUpdatedAgain += (sender, eventArgs) =>
+            {
+                Console.WriteLine($"{eventArgs.Status}");
+            };
             events.StatusUpdated += DisplayStatus2;
             
             events.StartUpdatingStatus();
