@@ -41,13 +41,8 @@ namespace BecomingDev
 
             #endregion
 
-            var text = "abc";
-
-            if (!string.IsNullOrWhiteSpace(text))
-            {
-                Console.WriteLine("hello");
-            }
-
+            var enumerations = new Enumerations();
+            enumerations.Test();
         }
     }
 }
