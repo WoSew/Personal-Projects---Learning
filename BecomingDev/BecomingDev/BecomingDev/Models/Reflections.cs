@@ -75,4 +75,32 @@ namespace BecomingDev.Models
             }
         }
     }
+
+    public class Attributes
+    {
+        public void Test()
+        {
+            var user = new User("user1@email.com", "secret");
+            var passwordAttribute = (UserPasswordAttribute)user.GetType()
+                .GetTypeInfo()
+                .GetProperty("Password")
+                .GetCustomAttribute(typeof(UserPasswordAttribute));
+           
+
+            var isPasswordValid = user.Password.Length == passwordAttribute.Length;
+            Console.WriteLine($"Is password valid: {isPasswordValid}.");
+        } 
+    }
+
+
+    [AttributeUsage(AttributeTargets.Property)]
+    public class UserPasswordAttribute : Attribute
+    {
+        public int Length { get; }
+
+        public UserPasswordAttribute(int length = 4)
+        {
+            Length = length;
+        }
+    }
 }   
