@@ -41,8 +41,9 @@ namespace BecomingDev
 
             #endregion
 
-            var linqExample = new LinqExample();
-            linqExample.LinqTraining();
+            var reflections = new Reflections();
+            reflections.Test();
+            Console.ReadLine();
         }
     }
 }
