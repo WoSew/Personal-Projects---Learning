@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Dynamic;
 using System.Linq;
+using System.Net.Http;
 using System.Reflection;
+using System.Threading.Tasks;
 
 namespace BecomingDev.Models
 {
@@ -101,6 +103,24 @@ namespace BecomingDev.Models
         public UserPasswordAttribute(int length = 4)
         {
             Length = length;
+        }
+    }
+
+    public class Asynhronous
+    {
+        public async Task Test()
+        {
+            var content = await GetContentAsync();
+            Console.WriteLine(content);
+        }
+
+        public async Task<string> GetContentAsync()
+        {
+            var httpClient = new HttpClient();
+            var response = await httpClient.GetAsync("https://jsonplaceholder.typicode.com/photos");
+            var content = await response.Content.ReadAsStringAsync();
+
+            return content;
         }
     }
 }   

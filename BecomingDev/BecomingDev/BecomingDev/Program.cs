@@ -41,8 +41,8 @@ namespace BecomingDev
 
             #endregion
 
-            var attributes = new Attributes();
-            attributes.Test();
+            var asynhronous = new Asynhronous();
+            asynhronous.Test().Wait();
             Console.ReadLine();
         }
     }
