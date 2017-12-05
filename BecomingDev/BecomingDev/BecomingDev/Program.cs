@@ -41,8 +41,8 @@ namespace BecomingDev
 
             #endregion
 
-            var reflections = new Reflections();
-            reflections.Test();
+            var dynamics = new Dynamics();
+            dynamics.Test();
             Console.ReadLine();
         }
     }

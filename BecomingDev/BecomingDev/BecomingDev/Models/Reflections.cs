@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 using System.Linq;
 using System.Reflection;
 
@@ -52,4 +53,26 @@ namespace BecomingDev.Models
         }
     }
 
+    public class Dynamics
+    {
+        public void Test()
+        {
+            dynamic user = new User("user1@email.com", "secret");
+            Console.WriteLine($"{user.Email}");
+
+            user.SetEmail("userDynamic@email.com");
+            Console.WriteLine($"{user.Email}");
+
+            dynamic anything = new ExpandoObject();
+            anything.id = 1;
+            anything.name = "Me";
+
+            Console.WriteLine($"{anything.id} {anything.name}");
+
+            foreach (var property in anything)
+            {
+                Console.WriteLine($"{property.Key}: {property.Value}");
+            }
+        }
+    }
 }   
