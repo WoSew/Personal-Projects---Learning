@@ -48,6 +48,7 @@ namespace BecomingDev.Models
         {
             SetEmail(email);
             SetPassword(password);
+            Activate();
         }
 
         public void SetEmail(string email)

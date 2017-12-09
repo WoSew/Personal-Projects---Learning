@@ -31,17 +31,15 @@ namespace BecomingDev.Models
 
     public class DataBase : IDatabase
     {
-        public bool IsConnected
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public bool IsConnected { get; protected set; }
 
         public void Connect()
         {
-            throw new System.NotImplementedException();
+            if (IsConnected)
+            {
+                return;
+            }
+            IsConnected = true;
         }
 
         public User GetUser(string email)
