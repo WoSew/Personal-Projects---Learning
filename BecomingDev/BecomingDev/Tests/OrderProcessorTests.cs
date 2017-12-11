@@ -18,8 +18,6 @@ namespace Tests
 
         public IOrdrerProcessor OrderProcessor;     //SUT - system under test
         
-       
-
         //TDD: Red -> Green -> Refactor
         [SetUp]
         public void Setup()
@@ -35,7 +33,6 @@ namespace Tests
                 .Returns(Order);
 
             OrderProcessor = new OrderProcessor(DatabaseMock.Object, EmailSenderMock.Object);
-
         }
 
         [Test]
@@ -55,8 +52,8 @@ namespace Tests
 
             Assert.IsTrue(Order.IsPurchased);
 
+            //fluent assertion
             Order.IsPurchased.Should().BeTrue();
-
         }
     }
 }

@@ -28,7 +28,7 @@ namespace Tests
             Assert.AreEqual(User.Email, expectedEmail);
         }
 
-        [Test] public void providing_empty_password_shoul_fail()
+        [Test] public void providing_empty_password_should_fail()
         {
             //Arrange
             
