@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using CodeWars;
 using CodeWars.Kyu7;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -66,6 +65,16 @@ namespace UnitTestCodeWars
             Assert.AreEqual(1, SumDigitsKyu7.SumDigits(100));
         }
 
+        [TestMethod]
+        public void RverseStringsLinq()
+        {
+            Assert.AreEqual("dlrow", ReversedStringsKyu7.ReversedStringsLinq("world"));
+        }
 
+        [TestMethod]
+        public void RverseStringsLoop()
+        {
+            Assert.AreEqual("dlrow", ReversedStringsKyu7.ReversedStringsLoop("world"));
+        }
     }
 }
