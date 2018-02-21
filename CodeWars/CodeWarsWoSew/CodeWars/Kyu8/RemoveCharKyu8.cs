@@ -1,14 +1,11 @@
-﻿using System.Collections.Generic;
-
-namespace CodeWars
+﻿namespace CodeWars.Kyu8
 {
-    public class Kyu8
+    public static class RemoveCharKyu8
     {
-
-        public static string Remove_char(string s)
+        public static string RemoveChar(string s)
         {
             string result = "";
-            for (int i = 1; i < s.Length-1; i++)
+            for (int i = 1; i < s.Length - 1; i++)
             {
                 result += s[i];
             }
@@ -17,7 +14,5 @@ namespace CodeWars
             //-----second solution-----
             //return s.Substring(1,(s.Length - 2));
         }
-
     }
 }
- 

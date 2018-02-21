@@ -1,4 +1,5 @@
 ﻿using CodeWars;
+using CodeWars.Kyu8;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestCodeWars
@@ -11,10 +12,10 @@ namespace UnitTestCodeWars
         [TestMethod]
         public void Remove_char()
         {
-           Assert.AreEqual("loquen",Kyu8.Remove_char("eloquent"));
-           Assert.AreEqual("ountr",Kyu8.Remove_char("country"));
-           Assert.AreEqual("erso", Kyu8.Remove_char("person"));
-           Assert.AreEqual("",Kyu8.Remove_char("ok"));
+           Assert.AreEqual("loquen", RemoveCharKyu8.RemoveChar("eloquent"));
+           Assert.AreEqual("ountr", RemoveCharKyu8.RemoveChar("country"));
+           Assert.AreEqual("erso", RemoveCharKyu8.RemoveChar("person"));
+           Assert.AreEqual("", RemoveCharKyu8.RemoveChar("ok"));
          }
 
     }
