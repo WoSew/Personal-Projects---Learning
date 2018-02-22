@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using CodeWars.Kyu7;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -75,6 +76,16 @@ namespace UnitTestCodeWars
         public void RverseStringsLoop()
         {
             Assert.AreEqual("dlrow", ReversedStringsKyu7.ReversedStringsLoop("world"));
+        }
+
+        [TestMethod]
+        public void SumOfArraySingles()
+        {
+            Assert.AreEqual(15, SumOfArraySinglesKyu7.SumOfArraySingles(new List<int>{ 4, 5, 7, 5, 4, 8 }));
+            Assert.AreEqual(19, SumOfArraySinglesKyu7.SumOfArraySingles(new List<int> { 9, 10, 19, 13, 19, 13 }));
+            Assert.AreEqual(12, SumOfArraySinglesKyu7.SumOfArraySingles(new List<int> { 16, 0, 11, 4, 8, 16, 0, 11 }));
+            Assert.AreEqual(22, SumOfArraySinglesKyu7.SumOfArraySingles(new List<int> { 5, 17, 18, 11, 13, 18, 11, 13 }));
+            Assert.AreEqual(24, SumOfArraySinglesKyu7.SumOfArraySingles(new List<int> { 5, 10, 19, 13, 10, 13 }));
         }
     }
 }
