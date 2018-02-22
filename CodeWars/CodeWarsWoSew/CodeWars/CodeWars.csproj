@@ -54,6 +54,7 @@
     <Compile Include="Kyu7\ReversedStringsKyu7.cs" />
     <Compile Include="Kyu7\SortByLengthKyu7.cs" />
     <Compile Include="Kyu7\SumDigitsKyu7.cs" />
+    <Compile Include="Kyu8\NumberOfPeopleInTheBusKyu8.cs" />
     <Compile Include="Kyu8\RemoveCharKyu8.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
