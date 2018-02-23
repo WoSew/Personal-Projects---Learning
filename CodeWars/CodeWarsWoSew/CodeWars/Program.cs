@@ -19,6 +19,10 @@ namespace CodeWars
             wsExceptions.TryCatchFinallyException();
 
             SumOfArraySinglesKyu7.SumOfArraySingles(new List<int> { 4, 5, 7, 5, 4, 8 });
+
+            LoveVsFriendshipKyu7.LoveVsFriendship("love");
+            LoveVsFriendshipKyu7.LoveVsFriendship("friendship");
+
         }
     }
 }

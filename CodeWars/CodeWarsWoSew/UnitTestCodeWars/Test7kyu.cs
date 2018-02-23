@@ -87,5 +87,15 @@ namespace UnitTestCodeWars
             Assert.AreEqual(22, SumOfArraySinglesKyu7.SumOfArraySingles(new List<int> { 5, 17, 18, 11, 13, 18, 11, 13 }));
             Assert.AreEqual(24, SumOfArraySinglesKyu7.SumOfArraySingles(new List<int> { 5, 10, 19, 13, 10, 13 }));
         }
+
+        [TestMethod]
+        public void LoveVsFriendship()
+        {
+            Assert.AreEqual(100, LoveVsFriendshipKyu7.LoveVeFriendshipLinq("attitude"));
+            Assert.AreEqual(75, LoveVsFriendshipKyu7.LoveVsFriendship("friends"));
+            Assert.AreEqual(66, LoveVsFriendshipKyu7.LoveVsFriendship("family"));
+            Assert.AreEqual(99, LoveVsFriendshipKyu7.LoveVsFriendship("selfness"));
+            Assert.AreEqual(96, LoveVsFriendshipKyu7.LoveVsFriendship("knowledge"));
+        }
     }
 }
