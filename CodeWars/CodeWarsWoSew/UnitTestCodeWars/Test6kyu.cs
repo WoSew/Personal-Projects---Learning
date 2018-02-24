@@ -1,4 +1,5 @@
-﻿using CodeWars.Kyu6;
+﻿using System.Collections.Generic;
+using CodeWars.Kyu6;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestCodeWars
@@ -47,6 +48,12 @@ namespace UnitTestCodeWars
             CollectionAssert.AreEqual(new double[] { 1 }, TribonacciSequence2Kyu6.TribonacciSequenceRefactiring(new double[] { 1, 1, 1 }, 1));
             CollectionAssert.AreEqual(new double[] { 1, 2 }, TribonacciSequence2Kyu6.TribonacciSequenceRefactiring(new double[] { 1, 2, 3 }, 2));
             CollectionAssert.AreEqual(new double[] { 1, 2, 3 }, TribonacciSequence2Kyu6.TribonacciSequenceRefactiring(new double[] { 1, 2, 3 }, 3));
+        }
+
+        [TestMethod]
+        public void UniqueInOrder()
+        {
+            CollectionAssert.AreEqual(new List<double> { 1.1, 2.2, 3.3 }, UniqueInOrderKyu6.UniqueInOrder(new List<double> { 1.1, 2.2, 2.2, 3.3 }));
         }
 
     }
