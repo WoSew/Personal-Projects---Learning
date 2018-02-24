@@ -23,6 +23,7 @@ namespace CodeWars
 
             LoveVsFriendshipKyu7.LoveVsFriendship("love");
             LoveVsFriendshipKyu7.LoveVsFriendship("friendship");
+
         }
     }
 }

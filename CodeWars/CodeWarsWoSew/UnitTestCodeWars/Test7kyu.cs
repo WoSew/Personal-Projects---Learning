@@ -97,5 +97,19 @@ namespace UnitTestCodeWars
             Assert.AreEqual(99, LoveVsFriendshipKyu7.LoveVsFriendship("selfness"));
             Assert.AreEqual(96, LoveVsFriendshipKyu7.LoveVsFriendship("knowledge"));
         }
+
+        [TestMethod]
+        public void StringEndWith()
+        {
+            Assert.AreEqual(true, StringEndsWithKyu7.StringEndWith("SewerynWojciech", "Wojciech"));
+            Assert.AreEqual(false, StringEndsWithKyu7.StringEndWith("SewerynWojciech", "Seweryn"));
+        }
+
+        [TestMethod]
+        public void StringEndWithSecond()
+        {
+            Assert.AreEqual(true, StringEndsWithKyu7.StringEndWithSecond("SewerynWojciech", "Wojciech"));
+            Assert.AreEqual(false, StringEndsWithKyu7.StringEndWithSecond("SewerynWojciech", "Seweryn"));
+        }
     }
 }
