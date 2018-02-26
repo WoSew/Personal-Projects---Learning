@@ -26,8 +26,9 @@ namespace CodeWars
             LoveVsFriendshipKyu7.LoveVsFriendship("friendship");
 
 
-
-
+            
+            Console.WriteLine(SimplePigLatinKyu5.SimplePigLatin("Pig latin is cool"));
+            Console.ReadKey();
         }
     }
 }
