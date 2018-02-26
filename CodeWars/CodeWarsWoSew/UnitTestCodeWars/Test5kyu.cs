@@ -22,5 +22,15 @@ namespace UnitTestCodeWars
             Assert.AreEqual("igPay atinlay siay oolcay", SimplePigLatinKyu5.SimplePigLatin("Pig latin is cool"));
             Assert.AreEqual("hisTay siay ymay tringsay", SimplePigLatinKyu5.SimplePigLatin("This is my string"));
         }
+
+        [TestMethod]
+        public void HumanReadableTime()
+        {
+            Assert.AreEqual(HumanReadableTimeKyu5.GetReadableTime(0), "00:00:00");
+            Assert.AreEqual(HumanReadableTimeKyu5.GetReadableTime(5), "00:00:05");
+            Assert.AreEqual(HumanReadableTimeKyu5.GetReadableTime(60), "00:01:00");
+            Assert.AreEqual(HumanReadableTimeKyu5.GetReadableTime(86399), "23:59:59");
+            Assert.AreEqual(HumanReadableTimeKyu5.GetReadableTime(359999), "99:59:59");
+        }
     }
 }

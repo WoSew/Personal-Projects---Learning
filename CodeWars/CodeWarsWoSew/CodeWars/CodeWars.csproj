@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kyu5\HumanReadableTimeKyu5.cs" />
     <Compile Include="Kyu5\SimplePigLatinKyu5.cs" />
     <Compile Include="Kyu5\ValidParenthesesKyu5.cs" />
     <Compile Include="Kyu6\DivisorsKyu6.cs" />
