@@ -27,6 +27,8 @@ namespace CodeWars
 
             HumanReadableTimeKyu5.GetReadableTime(5458);
             HumanReadableTimeKyu5.GetReadableTime(0);
+
+
         }
     }
 }

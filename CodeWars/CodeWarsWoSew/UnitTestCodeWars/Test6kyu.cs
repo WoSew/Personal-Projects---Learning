@@ -56,5 +56,11 @@ namespace UnitTestCodeWars
             CollectionAssert.AreEqual(new List<double> { 1.1, 2.2, 3.3 }, UniqueInOrderKyu6.UniqueInOrder(new List<double> { 1.1, 2.2, 2.2, 3.3 }));
         }
 
+        [TestMethod]
+        public void FindTheOddInt()
+        {
+            Assert.AreEqual(5,FindTheOddIntKyu6.FindTheOddInt(new[] { 20, 20, 20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5 }));
+        }
+
     }
 }

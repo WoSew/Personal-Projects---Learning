@@ -32,5 +32,7 @@ namespace UnitTestCodeWars
             Assert.AreEqual(HumanReadableTimeKyu5.GetReadableTime(86399), "23:59:59");
             Assert.AreEqual(HumanReadableTimeKyu5.GetReadableTime(359999), "99:59:59");
         }
+
+
     }
 }
