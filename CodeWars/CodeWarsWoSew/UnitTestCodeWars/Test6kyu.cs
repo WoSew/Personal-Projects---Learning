@@ -62,5 +62,21 @@ namespace UnitTestCodeWars
             Assert.AreEqual(5,FindTheOddIntKyu6.FindTheOddInt(new[] { 20, 20, 20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5 }));
         }
 
+        [TestMethod]
+        public void YourOrderPlease()
+        {
+            Assert.AreEqual("Thi1s is2 3a T4est", YourOrderPleaseKyu6.YourOrderPlease("is2 Thi1s T4est 3a"));
+            Assert.AreEqual("Fo1r the2 g3ood 4of th5e pe6ople", YourOrderPleaseKyu6.YourOrderPlease("4of Fo1r pe6ople g3ood th5e the2"));
+            Assert.AreEqual("", YourOrderPleaseKyu6.YourOrderPlease(""));
+        }
+
+        [TestMethod]
+        public void YourOrderPleaseLinq()
+        {
+            Assert.AreEqual("Thi1s is2 3a T4est", YourOrderPleaseKyu6.YourOrderPleaseLinq("is2 Thi1s T4est 3a"));
+            Assert.AreEqual("Fo1r the2 g3ood 4of th5e pe6ople", YourOrderPleaseKyu6.YourOrderPleaseLinq("4of Fo1r pe6ople g3ood th5e the2"));
+            Assert.AreEqual("", YourOrderPleaseKyu6.YourOrderPleaseLinq(""));
+        }
+
     }
 }
