@@ -111,5 +111,14 @@ namespace UnitTestCodeWars
             Assert.AreEqual(true, StringEndsWithKyu7.StringEndWithSecond("SewerynWojciech", "Wojciech"));
             Assert.AreEqual(false, StringEndsWithKyu7.StringEndWithSecond("SewerynWojciech", "Seweryn"));
         }
+
+        [TestMethod]
+        public void GetTHeMiddleCharacter()
+        {
+            Assert.AreEqual("es", GetTheMiddleCharacterKyu7.GetMiddle("test"));
+            Assert.AreEqual("t", GetTheMiddleCharacterKyu7.GetMiddle("testing"));
+            Assert.AreEqual("dd", GetTheMiddleCharacterKyu7.GetMiddle("middle"));
+            Assert.AreEqual("A", GetTheMiddleCharacterKyu7.GetMiddle("A"));
+        }
     }
 }
