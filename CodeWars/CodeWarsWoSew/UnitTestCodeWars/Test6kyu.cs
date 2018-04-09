@@ -78,5 +78,11 @@ namespace UnitTestCodeWars
             Assert.AreEqual("", YourOrderPleaseKyu6.YourOrderPleaseLinq(""));
         }
 
+        [TestMethod]
+        public void Solution()
+        {
+            Assert.AreEqual(23, MultiplesOf3Or5Key6.Solution(10));
+            
+        }
     }
 }
