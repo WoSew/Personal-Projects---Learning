@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Kyu6
 {
-    public static class MultiplesOf3Or5Key6
+    public static class MultiplesOf3Or5Kyu6
     {
         public static int Solution(int value)
         {

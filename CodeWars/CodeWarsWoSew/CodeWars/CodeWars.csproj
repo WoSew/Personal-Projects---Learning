@@ -47,7 +47,7 @@
     <Compile Include="Kyu5\ValidParenthesesKyu5.cs" />
     <Compile Include="Kyu6\DivisorsKyu6.cs" />
     <Compile Include="Kyu6\FindTheOddIntKyu6.cs" />
-    <Compile Include="Kyu6\MultiplesOf3Or5Key6.cs" />
+    <Compile Include="Kyu6\MultiplesOf3Or5Kyu6.cs" />
     <Compile Include="Kyu6\PersistenceKyu6.cs" />
     <Compile Include="Kyu6\TribonacciSequence2Kyu6.cs" />
     <Compile Include="Kyu6\TribonacciSequenceKyu6.cs" />

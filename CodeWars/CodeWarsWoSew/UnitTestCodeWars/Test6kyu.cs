@@ -81,7 +81,7 @@ namespace UnitTestCodeWars
         [TestMethod]
         public void Solution()
         {
-            Assert.AreEqual(23, MultiplesOf3Or5Key6.Solution(10));
+            Assert.AreEqual(23, MultiplesOf3Or5Kyu6.Solution(10));
             
         }
     }

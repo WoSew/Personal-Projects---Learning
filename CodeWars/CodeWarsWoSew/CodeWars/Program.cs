@@ -15,7 +15,7 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
-            MultiplesOf3Or5Key6.Solution(10);
+            MultiplesOf3Or5Kyu6.Solution(10);
 
             WoSewExceptions wsExceptions = new WoSewExceptions();
             wsExceptions.SelectiveExceptions();
