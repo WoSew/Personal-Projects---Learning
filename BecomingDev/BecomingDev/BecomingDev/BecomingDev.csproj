@@ -50,6 +50,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithmics\StringOperations.cs" />
+    <Compile Include="Algorithmics\StringOperations2.cs" />
+    <Compile Include="DateMakingWaves\DateLogic.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Enumerations.cs" />
     <Compile Include="Models\Exceptions.cs" />
@@ -64,6 +67,12 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\AtributesExample.cs" />
+    <Compile Include="Test\Composition.cs" />
+    <Compile Include="Test\CtorTest.cs" />
+    <Compile Include="Test\ReflectionExample.cs" />
+    <Compile Include="Test\RefOut.cs" />
+    <Compile Include="Test\TryCatchException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

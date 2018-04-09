@@ -45,5 +45,11 @@ namespace UnitTestCodeWars
             Assert.AreEqual(21, NumberOfPeopleInTheBusKyu8.NumberOfPeopleInTheBusLinq(peopleList3));
         }
 
+        [TestMethod]
+        public void OppositeNumber()
+        {
+            Assert.AreEqual(-1, OppositeNumberKyu8.Opposite(1));
+        }
+
     }
 }
