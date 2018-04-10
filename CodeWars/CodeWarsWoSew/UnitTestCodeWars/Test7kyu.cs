@@ -120,5 +120,17 @@ namespace UnitTestCodeWars
             Assert.AreEqual("dd", GetTheMiddleCharacterKyu7.GetMiddle("middle"));
             Assert.AreEqual("A", GetTheMiddleCharacterKyu7.GetMiddle("A"));
         }
+
+        [TestMethod]
+        public void Accum()
+        {
+            Assert.AreEqual(MumbligKyu7.Accum("abcd"), "A-Bb-Ccc-Dddd");
+            Assert.AreEqual(MumbligKyu7.Accum("RqaEzty"), "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy");
+            Assert.AreEqual(MumbligKyu7.Accum("ZpglnRxqenU"), "Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu");
+            Assert.AreEqual(MumbligKyu7.Accum("NyffsGeyylB"), "N-Yy-Fff-Ffff-Sssss-Gggggg-Eeeeeee-Yyyyyyyy-Yyyyyyyyy-Llllllllll-Bbbbbbbbbbb");
+            Assert.AreEqual(MumbligKyu7.Accum("MjtkuBovqrU"), "M-Jj-Ttt-Kkkk-Uuuuu-Bbbbbb-Ooooooo-Vvvvvvvv-Qqqqqqqqq-Rrrrrrrrrr-Uuuuuuuuuuu");
+            Assert.AreEqual(MumbligKyu7.Accum("EvidjUnokmM"), "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm");
+            Assert.AreEqual(MumbligKyu7.Accum("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc");
+        }
     }
 }

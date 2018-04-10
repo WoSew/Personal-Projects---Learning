@@ -58,6 +58,7 @@
     <Compile Include="Kyu7\CountingArrayElementsKyu7.cs" />
     <Compile Include="Kyu7\GetTheMiddleCharacterKyu7.cs" />
     <Compile Include="Kyu7\LoveVsFriendshipKyu7.cs" />
+    <Compile Include="Kyu7\MumbligKyu7.cs" />
     <Compile Include="Kyu7\NbDigKyu7.cs" />
     <Compile Include="Kyu7\PrinterErrorKyu7.cs" />
     <Compile Include="Kyu7\ReversedStringsKyu7.cs" />

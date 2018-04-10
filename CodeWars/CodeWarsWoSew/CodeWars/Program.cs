@@ -15,6 +15,8 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
+            MumbligKyu7.Accum("abcd");
+
             MultiplesOf3Or5Kyu6.Solution(10);
 
             WoSewExceptions wsExceptions = new WoSewExceptions();
