@@ -54,10 +54,10 @@ namespace UnitTestCodeWars
         [TestMethod]
         public void EvenOrOddTest()
         {
-            Assert.AreEqual("Even", EvenOrOdd.JustWriteIt(2));
-            Assert.AreEqual("Odd", EvenOrOdd.JustWriteIt(1));
-            Assert.AreEqual("Even", EvenOrOdd.JustWriteIt(0));
-            Assert.AreEqual("Odd", EvenOrOdd.JustWriteIt(7));
+            Assert.AreEqual("Even", EvenOrOddKyu8.JustWriteIt(2));
+            Assert.AreEqual("Odd", EvenOrOddKyu8.JustWriteIt(1));
+            Assert.AreEqual("Even", EvenOrOddKyu8.JustWriteIt(0));
+            Assert.AreEqual("Odd", EvenOrOddKyu8.JustWriteIt(7));
         }
     }
 }

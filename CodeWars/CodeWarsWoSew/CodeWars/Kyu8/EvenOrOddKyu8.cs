@@ -1,6 +1,6 @@
 ﻿namespace CodeWars.Kyu8
 {
-    public static class EvenOrOdd
+    public static class EvenOrOddKyu8
     {
         public static string JustWriteIt(int number)
         {

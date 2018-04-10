@@ -56,6 +56,7 @@
     <Compile Include="Kyu7\CalcKyu7.cs" />
     <Compile Include="Kyu7\CalcLinqKyu7.cs" />
     <Compile Include="Kyu7\CountingArrayElementsKyu7.cs" />
+    <Compile Include="Kyu7\DescendingOrderKyu7.cs" />
     <Compile Include="Kyu7\GetTheMiddleCharacterKyu7.cs" />
     <Compile Include="Kyu7\LoveVsFriendshipKyu7.cs" />
     <Compile Include="Kyu7\MumbligKyu7.cs" />
@@ -66,7 +67,7 @@
     <Compile Include="Kyu7\StringEndsWithKyu7.cs" />
     <Compile Include="Kyu7\SumDigitsKyu7.cs" />
     <Compile Include="Kyu7\SumOfArraySinglesKyu7.cs" />
-    <Compile Include="Kyu8\EvenOrOdd.cs" />
+    <Compile Include="Kyu8\EvenOrOddKyu8.cs" />
     <Compile Include="Kyu8\NumberOfPeopleInTheBusKyu8.cs" />
     <Compile Include="Kyu8\OppositeNumberKyu8.cs" />
     <Compile Include="Kyu8\RemoveCharKyu8.cs" />

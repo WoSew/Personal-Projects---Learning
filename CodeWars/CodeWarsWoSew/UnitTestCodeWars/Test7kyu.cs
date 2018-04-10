@@ -132,5 +132,11 @@ namespace UnitTestCodeWars
             Assert.AreEqual(MumbligKyu7.Accum("EvidjUnokmM"), "E-Vv-Iii-Dddd-Jjjjj-Uuuuuu-Nnnnnnn-Oooooooo-Kkkkkkkkk-Mmmmmmmmmm-Mmmmmmmmmmm");
             Assert.AreEqual(MumbligKyu7.Accum("HbideVbxncC"), "H-Bb-Iii-Dddd-Eeeee-Vvvvvv-Bbbbbbb-Xxxxxxxx-Nnnnnnnnn-Cccccccccc-Ccccccccccc");
         }
+
+        [TestMethod]
+        public void DescendingOrder()
+        {
+            Assert.AreEqual(0, DescendingOrderKyu7.DescendingOrder(0));
+        }
     }
 }

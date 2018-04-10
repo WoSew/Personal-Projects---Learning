@@ -15,6 +15,8 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
+            DescendingOrderKyu7.DescendingOrder(141267123);
+
             MumbligKyu7.Accum("abcd");
 
             MultiplesOf3Or5Kyu6.Solution(10);
