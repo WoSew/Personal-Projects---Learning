@@ -51,5 +51,13 @@ namespace UnitTestCodeWars
             Assert.AreEqual(-1, OppositeNumberKyu8.Opposite(1));
         }
 
+        [TestMethod]
+        public void EvenOrOddTest()
+        {
+            Assert.AreEqual("Even", EvenOrOdd.JustWriteIt(2));
+            Assert.AreEqual("Odd", EvenOrOdd.JustWriteIt(1));
+            Assert.AreEqual("Even", EvenOrOdd.JustWriteIt(0));
+            Assert.AreEqual("Odd", EvenOrOdd.JustWriteIt(7));
+        }
     }
 }

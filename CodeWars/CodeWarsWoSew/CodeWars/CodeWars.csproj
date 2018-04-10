@@ -66,6 +66,7 @@
     <Compile Include="Kyu7\StringEndsWithKyu7.cs" />
     <Compile Include="Kyu7\SumDigitsKyu7.cs" />
     <Compile Include="Kyu7\SumOfArraySinglesKyu7.cs" />
+    <Compile Include="Kyu8\EvenOrOdd.cs" />
     <Compile Include="Kyu8\NumberOfPeopleInTheBusKyu8.cs" />
     <Compile Include="Kyu8\OppositeNumberKyu8.cs" />
     <Compile Include="Kyu8\RemoveCharKyu8.cs" />
