@@ -15,6 +15,8 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
+            ConvertStringToCamelCaseKyu5.ToCamelCase("The-stealth-warrior");
+
             DescendingOrderKyu7.DescendingOrder(141267123);
 
             MumbligKyu7.Accum("abcd");

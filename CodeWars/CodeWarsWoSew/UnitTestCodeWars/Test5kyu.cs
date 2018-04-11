@@ -33,6 +33,12 @@ namespace UnitTestCodeWars
             Assert.AreEqual(HumanReadableTimeKyu5.GetReadableTime(359999), "99:59:59");
         }
 
-
+        [TestMethod]
+        public void ConvertStringToCamelCase()
+        {
+            Assert.AreEqual("theStealthWarrior", ConvertStringToCamelCaseKyu5.ToCamelCase("the_stealth_warrior"));
+            Assert.AreEqual("TheStealthWarrior", ConvertStringToCamelCaseKyu5.ToCamelCase("The-Stealth-Warrior"));
+        }
     }
+    
 }
