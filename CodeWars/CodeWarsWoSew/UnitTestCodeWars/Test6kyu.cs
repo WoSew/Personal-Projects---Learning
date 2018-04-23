@@ -84,5 +84,17 @@ namespace UnitTestCodeWars
             Assert.AreEqual(23, MultiplesOf3Or5Kyu6.Solution(10));
             
         }
+
+        [TestMethod]
+        public void GarbleSort()
+        {
+            CollectionAssert.AreEqual(
+                new int[] { 6, 3, 5 },
+                GarbleSortKyu6.GarbleSort(new int[] { 5, 6, 3 }));
+
+            CollectionAssert.AreEqual(
+                new int[] { 1, 3, 2 },
+                GarbleSortKyu6.GarbleSort(new int[] { 1, 2, 3 }));
+        }
     }
 }

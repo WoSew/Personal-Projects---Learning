@@ -15,6 +15,8 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
+            GarbleSortKyu6.GarbleSort(new int[] {5, 6, 3});
+
             ConvertStringToCamelCaseKyu5.ToCamelCase("The-stealth-warrior");
 
             DescendingOrderKyu7.DescendingOrder(141267123);
