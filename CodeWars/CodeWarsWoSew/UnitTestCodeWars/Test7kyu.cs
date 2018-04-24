@@ -138,5 +138,12 @@ namespace UnitTestCodeWars
         {
             Assert.AreEqual(0, DescendingOrderKyu7.DescendingOrder(0));
         }
+
+        [TestMethod]
+        public void HighestAndLowestNumbersTest()
+        {
+            Assert.AreEqual("42 -9", HighestAndLowestKyu7.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+
+        }
     }
 }

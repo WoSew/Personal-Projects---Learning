@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using CodeWars.Kyu6;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -95,6 +96,24 @@ namespace UnitTestCodeWars
             CollectionAssert.AreEqual(
                 new int[] { 1, 3, 2 },
                 GarbleSortKyu6.GarbleSort(new int[] { 1, 2, 3 }));
+        }
+
+        [TestMethod]
+        public void MorseCodeDecoder()
+        {
+            try
+            {
+                string input = ".... . -.--   .--- ..- -.. .";
+                string expected = "HEY JUDE";
+
+                string actual = DecodeTheMorseCodeKyu6.Decode(input);
+
+                Assert.AreEqual(expected, actual);
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail("There seems to be an error somewhere in your code. Exception message reads as follows: " + ex.Message);
+            }
         }
     }
 }

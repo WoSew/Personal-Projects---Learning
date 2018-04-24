@@ -15,6 +15,10 @@ namespace CodeWars
     {
         static void Main(string[] args)
         {
+            HighestAndLowestKyu7.HighAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
+
+            ReversedSequenceKyu8.ReverseSeq(5);
+
             GarbleSortKyu6.GarbleSort(new int[] {5, 6, 3});
 
             ConvertStringToCamelCaseKyu5.ToCamelCase("The-stealth-warrior");

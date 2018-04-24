@@ -59,5 +59,14 @@ namespace UnitTestCodeWars
             Assert.AreEqual("Even", EvenOrOddKyu8.JustWriteIt(0));
             Assert.AreEqual("Odd", EvenOrOddKyu8.JustWriteIt(7));
         }
+
+        [TestMethod]
+        public void ReverseSeqTest()
+        {
+            int[] testInts = {5, 4, 3, 2, 1};
+
+            Assert.AreEqual(ReversedSequenceKyu8.ReverseSeq(5), testInts);
+
+        }
     }
 }
